@@ -4,7 +4,7 @@ const { sumTokensExport } = require('../helper/unwrapLPs')
 const config = {
     "ethereum": {
         token: "0xcf3c8be2e2c42331da80ef210e9b1b307c03d36a",
-        bountyNetworks: []
+        bountyNetworks: ["0x695b30d636e4F232d443af6a93dF95AFD2FF485C"]
     },
     "moonriver": {
         token: "0xCb4a593ce512D78162C58384f0b2Fd6e802c2c47",
@@ -28,6 +28,6 @@ Object.keys(config).forEach(chain => {
   if (registry) owners.push(registry)
   module.exports[chain] = {
     tvl: () => ({}),
-    staking: sumTokensExport({ chain, owners, tokens: [token]})
-  }
+        staking: sumTokensExport({ chain, owners, tokens: [token] })
+    }
 })
