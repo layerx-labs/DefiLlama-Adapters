@@ -4,7 +4,7 @@ const { sumTokensExport } = require('../helper/unwrapLPs')
 const config = {
     "ethereum": {
         token: "0xcf3c8be2e2c42331da80ef210e9b1b307c03d36a",
-        bountyNetworks: []
+        bountyNetworks: ["0x695b30d636e4f232d443af6a93df95afd2ff485c"]
     },
     "moonriver": {
         token: "0xCb4a593ce512D78162C58384f0b2Fd6e802c2c47",
@@ -14,6 +14,10 @@ const config = {
         token: "0x4EdF8E0778967012D46968ceadb75436d0426f88",
         registry: "0x34DD5F63437FdC20557a8C6dDAeA056d3661c5e0",
         bountyNetworks: ["0xa9938c8712552Fe0b5312547fA96Ad9f14d58d3C"]
+    },
+    "polygon": {
+        token: "0x07CC1cC3628Cc1615120DF781eF9fc8EC2feAE09",
+        bountyNetworks: ["0x1a710f650e0c829c55b20a31fe1f8b45907baddc"]
     }
 }
 
